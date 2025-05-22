@@ -32,7 +32,8 @@
         </style>
     </head>
     <body>
-                <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"> /* ceci est un commentaire pour voir ci git marche */
+                <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark"> 
+                {# ceci est un commentaire pour voir ci git marche  #}
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,12 +42,12 @@
             <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                <a class="nav-link active" href="#">Home
+                <a class="nav-link active" href="{{ path('app_r209controller') }}">Home
                     <span class="visually-hidden">(current)</span>
                 </a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="{{ path('app_register') }}">registration</a>
                 </li>
                 <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>
