@@ -26,14 +26,6 @@ class RegistrationForm extends AbstractType
                     ]),
                 ],
             ])
-            ->add('nom', TextType::class, [
-                'label' => 'Nom',
-                'constraints' => [
-                    new NotBlank([
-                        'message' => 'Veuillez saisir votre nom',
-                    ]),
-                ],
-            ])
             ->add('prenom', TextType::class, [
                 'label' => 'Prénom',
                 'constraints' => [
