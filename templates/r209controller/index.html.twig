@@ -1,11 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello R209controllerController!{% endblock %}
+{% block title %}Accueil{% endblock %}
 
 {% block body %}
-<style>
-
-</style>
-
-
+<div class="container mt-4">
+    <h1>Bienvenue sur le projet R209 !</h1>
+    <p>
+        <a href="{{ path('app_notes') }}" class="btn btn-primary">Voir les notes</a>
+    </p>
+</div>
 {% endblock %}
+

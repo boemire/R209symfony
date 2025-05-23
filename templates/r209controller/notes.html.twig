@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Mes notes</h1>
+
+    <h2>Notes "En cours"</h2>
+    <ul>
+        {% for note in notes_en_cours %}
+            <li>{{ note.titre }}</li>
+        {% else %}
+            <li>Aucune note en cours</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Notes "Urgentes"</h2>
+    <ul>
+        {% for note in notes_urgentes %}
+            <li>{{ note.titre }}</li>
+        {% else %}
+            <li>Aucune note urgente</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Mes notes</h2>
+    <ul>
+        {% for note in notes_utilisateur %}
+            <li>{{ note.titre }}</li>
+        {% else %}
+            <li>Aucune note</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Mes notes "En cours"</h2>
+    <ul>
+        {% for note in notes_en_cours_utilisateur %}
+            <li>{{ note.titre }}</li>
+        {% else %}
+            <li>Aucune note en cours</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
